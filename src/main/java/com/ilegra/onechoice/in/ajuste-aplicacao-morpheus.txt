@@ -1,0 +1,12 @@
+remover informações de registro
+remover honorários assessoria
+Criar páginas e roteamento no menu superior direito.
+Mudar a cor padrão para azul.
+Deixar somente os quatro primeiros no mesmo estilo do primeiro.
+(Financeiro, Dispachante, Configurações e Clientes).
+
+O formulário do dispachante é o maior (depois de registrado vai para a área do cliente).
+
+O módulo financeiro é questão de baixa e tals.
+
+Cadastro de Fornecedor, Conta Bancária etc.
