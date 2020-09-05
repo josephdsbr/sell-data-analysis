@@ -9,7 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonPropertyOrder({ "id", "quantity", "price"})
 public class Item extends StoreProcessItem {
   Long id;
   Long quantity;

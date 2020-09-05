@@ -4,9 +4,7 @@ import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.ilegra.onechoice.models.pojo.StoreProcessItem;
 import lombok.*;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -16,7 +14,7 @@ import java.util.List;
 @JsonPropertyOrder({ "id", "saleId", "items"})
 public class Sell extends StoreProcessItem {
   Long saleId;
-  List<Item> items;
+  List<Item> items = new ArrayList<>();
   String salesManName;
 
   @Override
@@ -26,9 +24,9 @@ public class Sell extends StoreProcessItem {
     Arrays.stream(item[2].replaceAll("[\\[\\](){}]","")
         .split(","))
         .map(t -> t.split("-"))
-        .forEach(splitedItem -> {
+        .forEach(splitItem -> {
           Item serializedItem = new Item();
-          serializedItem.handleParseLineToObject(splitedItem);
+          serializedItem.handleParseLineToObject(splitItem);
           this.items.add(serializedItem);
     });
   }
