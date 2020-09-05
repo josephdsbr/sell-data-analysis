@@ -10,15 +10,15 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @JsonPropertyOrder({ "id", "ni", "name", "salary" })
-public class Seller extends StoreProcessItem<Seller> {
-  Long id;
+public class Seller extends StoreProcessItem {
   String ni;
   String name;
   Double salary;
 
   @Override
-  public Seller handleParseLineToObject(String[] item) {
-    System.out.println(Seller.class);
-    return null;
+  public void handleParseLineToObject(String[] item) {
+    this.ni = item[1];
+    this.name = item[2];
+    this.salary = Double.valueOf(item[3]);
   }
 }

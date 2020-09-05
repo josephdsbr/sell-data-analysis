@@ -11,9 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 @JsonPropertyOrder({ "id", "ni", "name", "businessArea" })
-public class Client extends StoreProcessItem<Client> {
-  @CsvBindByName(column = "id")
-  Long id;
+public class Client extends StoreProcessItem {
   @CsvBindByName(column = "ni")
   String ni;
   @CsvBindByName(column = "name")
@@ -22,8 +20,9 @@ public class Client extends StoreProcessItem<Client> {
   String businessArea;
 
   @Override
-  public Client handleParseLineToObject(String[] item) {
-    System.out.println(Client.class);
-    return null;
+  public void handleParseLineToObject(String[] item) {
+    this.ni = item[1];
+    this.name = item[2];
+    this.businessArea = item[3];
   }
 }

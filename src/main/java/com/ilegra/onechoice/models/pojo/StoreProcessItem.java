@@ -1,5 +1,5 @@
 package com.ilegra.onechoice.models.pojo;
 
-public abstract class StoreProcessItem<T> {
-  public abstract T handleParseLineToObject(String[] item);
+public abstract class StoreProcessItem {
+  public abstract void handleParseLineToObject(String[] item);
 }
