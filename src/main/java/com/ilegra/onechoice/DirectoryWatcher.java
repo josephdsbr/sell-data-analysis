@@ -1,14 +1,11 @@
 package com.ilegra.onechoice;
 
-import com.ilegra.onechoice.models.Sell;
 import com.ilegra.onechoice.service.SellDataAnalysisService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Async;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;
+import java.io.Reader;
 import java.nio.file.*;
 import java.util.Objects;
 
@@ -32,8 +29,9 @@ public class DirectoryWatcher {
     while (Objects.nonNull(key = watchService.take())) {
       for (WatchEvent<?> event: key.pollEvents()) {
         System.out.printf("Event kind: %s. File effected %s%n", event.kind(), event.context());
-        Path filePath = Paths.get(String.valueOf(path), String.valueOf(event.context()));
-        sellDataAnalysisService.csvToClass(filePath);
+        Path filePath = Paths.get(String.valueOf(path), event.context().toString());
+        Reader reader = Files.newBufferedReader(filePath);
+        sellDataAnalysisService.csvToClass(reader);
       }
       key.reset();
     }
