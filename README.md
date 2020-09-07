@@ -71,6 +71,6 @@ This project was developed using:
  If you want to ask something, please contact me on my Social Media.
  * **Instagram** - [@pajebr](https://www.instagram.com/pajebr/)
  * **Linkedin** - [josephdsbr](https://www.linkedin.com/in/josephdsbr)
- * **Github** -- [josephdsbr](https://github.com/josephdsbr)
+ * **Github** - [josephdsbr](https://github.com/josephdsbr)
  
  Made with <3 by José Vinícius.
