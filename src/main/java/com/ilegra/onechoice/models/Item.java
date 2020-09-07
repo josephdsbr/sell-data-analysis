@@ -1,6 +1,5 @@
 package com.ilegra.onechoice.models;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.ilegra.onechoice.models.pojo.StoreProcessItem;
 import lombok.*;
 

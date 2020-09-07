@@ -1,17 +1,17 @@
 package com.ilegra.onechoice.models;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.ilegra.onechoice.models.pojo.StoreProcessItem;
 import lombok.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonPropertyOrder({ "id", "saleId", "items"})
 public class Sell extends StoreProcessItem {
   Long saleId;
   List<Item> items = new ArrayList<>();

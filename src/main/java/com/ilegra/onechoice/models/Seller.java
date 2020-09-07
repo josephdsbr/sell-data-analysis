@@ -1,6 +1,5 @@
 package com.ilegra.onechoice.models;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.ilegra.onechoice.models.pojo.StoreProcessItem;
 import lombok.*;
 
@@ -9,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonPropertyOrder({ "id", "ni", "name", "salary" })
 public class Seller extends StoreProcessItem {
   String ni;
   String name;

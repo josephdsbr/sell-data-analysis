@@ -1,10 +1,6 @@
 package com.ilegra.onechoice.models;
 
-import com.opencsv.bean.CsvBindByPosition;
 import lombok.Builder;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 
 @Builder
 public class OperationStatistics {

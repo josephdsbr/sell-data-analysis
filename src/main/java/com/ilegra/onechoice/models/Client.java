@@ -1,6 +1,5 @@
 package com.ilegra.onechoice.models;
 
-import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.ilegra.onechoice.models.pojo.StoreProcessItem;
 import com.opencsv.bean.CsvBindByName;
 import lombok.*;
@@ -10,7 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@JsonPropertyOrder({ "id", "ni", "name", "businessArea" })
 public class Client extends StoreProcessItem {
   @CsvBindByName(column = "ni")
   String ni;
