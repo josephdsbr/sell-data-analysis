@@ -2,7 +2,7 @@
 
 This project was developed to analysing and summarise, in real time, csv files to statistical reports.
 
-# How to run the project
+# How the project works
 
 ## Introduction
 
@@ -51,6 +51,12 @@ The input file should have the following structures and separated by ``ç``:
 003ç10ç[1-10-100,2-30-2.50,3-40-3.10]çPedro
 003ç08ç[1-34-10,2-33-1.50,3-40-0.10]çPaulo
 ``
+
+# How to run the project
+
+You have to start the DirectoryWatcher.java.
+
+Then, just put any csv file, with the certain structures, into the input directory folder explained above and see the magic happens.
 
 # Technologies
 
