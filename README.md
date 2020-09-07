@@ -54,8 +54,7 @@ The input file should have the following structures and separated by ``ç``:
 
 # How to run the project
 
-You have to start the DirectoryWatcher.java.
-
+You have to start the class ``src/main/java/com.ilegra.onechoice/DirectoryWatcher``.
 Then, just put any csv file, with the certain structures, into the input directory folder explained above and see the magic happens.
 
 # Technologies
