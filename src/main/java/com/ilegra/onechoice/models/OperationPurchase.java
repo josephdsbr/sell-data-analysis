@@ -14,14 +14,14 @@ import java.util.stream.Collectors;
 @Builder
 public class OperationPurchase {
   List<Client> clients = new ArrayList<>();
-  List<Sell> sells = new ArrayList<>();
+  List<Sale> sells = new ArrayList<>();
   List<Seller> sellers = new ArrayList<>();
 
   public void addClientToOperation(Client client) {
     this.clients.add(client);
   }
 
-  public void addSellsToOperation(Sell sell) {
+  public void addSellsToOperation(Sale sell) {
     this.sells.add(sell);
   }
 

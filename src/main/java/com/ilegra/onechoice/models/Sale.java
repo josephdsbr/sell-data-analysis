@@ -12,7 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class Sell extends StoreProcessItem {
+public class Sale extends StoreProcessItem {
   Long saleId;
   List<Item> items = new ArrayList<>();
   String salesManName;

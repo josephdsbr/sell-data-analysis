@@ -37,7 +37,7 @@ public class SellDataAnalysisService {
         operationPurchase.addSellerToOperation(seller);
       }
       else if (code.equals(FileIdentificationEnum.SELL.getCode())) {
-        Sell sell = new Sell();
+        Sale sell = new Sale();
         sell.handleParseLineToObject(values);
         operationPurchase.addSellsToOperation(sell);
       }
