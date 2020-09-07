@@ -8,10 +8,10 @@ This project was developed to analysing and summarise, in real time, csv files t
 
 The project can identify four types of classes: 
 
-1. Seller
-2. Client
-3. Sale
-4. Item
+1. **Seller**
+2. **Client**
+3. **Sale**
+4. **Item**
 
 The watch service is going to look for a path called ``in`` on your ``user path``. For example:
 ``C:/Usuários/vinicius/in`` and when some csv is pulled into this folder, then an output csv file with 
@@ -21,22 +21,22 @@ The input file should have the following structures and separated by ``ç``:
 
 ## Classes
 
-* Seller
+* **Seller**
     - Identifier - (001)
     - Identifier Number - String
     - Name - String
     - Salary - Double
-* Client
+* **Client**
     - Identifier - (002)
     - Identifier Number - String
     - Name - String
     - Business Area - String
-* Sale
+* **Sale**
     - Identifier - (003)
     - SaleId - Long
     - Items - List<Items>
     - SalesManName - String
-* Item
+* **Item**
     - Id - Long
     - Quantity - Long
     - Price - Double
